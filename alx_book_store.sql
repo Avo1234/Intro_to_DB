@@ -33,8 +33,10 @@ order_date DATE
 
 CREATE TABLE Order_Details (
 orderdetailid INT PRIMARY KEY,
-order_id INT, FOREIGN KEY (order_id) REFERENCES  Orders(order_id),
-book_id INT, FOREIGN KEY (book_id) REFERENCES  Books(book_id),
+order_id INT,
+FOREIGN KEY (order_id) REFERENCES  Orders(order_id),
+book_id INT,
+FOREIGN KEY (book_id) REFERENCES  Books(book_id),
 
 order_date DATE
 );
